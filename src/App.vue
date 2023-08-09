@@ -11,5 +11,12 @@ import NavBar from './components/NavBar.vue';
   
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
+
+body {
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 </style>

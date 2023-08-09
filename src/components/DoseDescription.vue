@@ -5,7 +5,9 @@
 <template>
     <div class="description-wrapper">
         <div class="left-side-illustration">
-            <img src="../assets/images/image_1.jpg" alt="">
+            <div class="info-background-wrapper">
+                <img src="../assets/images/image_1.jpg" alt="">
+            </div>
         </div>
 
         <div class="right-side-text-description">
@@ -25,23 +27,44 @@
 <style lang="scss" scoped>
 
 .description-wrapper {
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
     max-width: 1440px;
-    height: 100%;
+    height: 80%;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: #959da533 0px 8px 24px;
 
     .right-side-text-description {
         display: flex;
+        margin: 30px 30px 0 40px;
         flex-direction: column;
+
+        h1 {
+            margin: 0 0 0 0;
+            text-align: end;
+            font-size: 3em;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.4em;
+        }
     }
 
     .left-side-illustration {
         height: 100%;
-        width: 50%;
+        width: 100%;
+
+        .info-background-wrapper {
+            margin: 10%;
+        }
 
         img {
-            height: 80%;
-            width: 80%;
+            height: 100%;
+            width: 100%;
             object-fit: cover;
         }
     }
